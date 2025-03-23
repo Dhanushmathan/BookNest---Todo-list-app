@@ -65,11 +65,34 @@
     </div>
   </header>
 
-  <div class="add-book">
-    <span>+</span>
+  <section>
+    <div class="book-container" id="bookContainer">
+      <h2>Naruto Shippuden</h2>
+      <h5>Kishimoto</h5>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, quas voluptate ipsum tempora magni blanditiis,
+        animi nesciunt perferendis unde vitae natus. Velit nam repudiandae totam voluptatum, illum itaque earum aliquam?
+      </p>
+      <button id="deleteBtn">Delete</button>
+    </div>
+  </section>
+
+  <div class="add-overlay" id="addOverlay"></div>
+
+  <div class="book-box" id="addBookBox">
+    <h2>Add Book</h2>
+    <form action="">
+      <input type="text" placeholder="Book Title" id="bookTitle">
+      <input type="text" placeholder="Book Author" id="bookAuthor">
+      <textarea name="desc" placeholder="Short Desription" id="bookDescription"></textarea>
+      <button id="bookBoxAdd">ADD</button>
+      <button id="bookBoxCancel">Cancel</button>
+    </form>
   </div>
 
-  <div class="add-overlay"></div>
+  <div class="add-book">
+    <span id="addBookBtn">+</span>
+  </div>
+
 
   <script type="module" src="/src/main.js"></script>
 </body>

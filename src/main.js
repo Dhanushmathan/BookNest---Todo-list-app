@@ -36,20 +36,16 @@ addBtn.addEventListener('click', (e) => {
       <h2>${bookTitle.value}</h2>
       <h5>${bookAuthor.value}</h5>
       <p>${bookDescription.value}</p>
-      <button class="deleteBtn">Delete</button>
+      <button id="deleteBtn">Delete</button>
   `;
-  divEl.querySelector(".deleteBtn").addEventListener('click', (e) => {
-    deleteContainer(e);
-  });
+
   bookContainer.append(divEl);
   addOverlayEL.style.display = "none";
   addBookBox.style.display = "none";
 })
 
-// deleteBtn.addEventListener('click', () => {
-//   deleteContainer(e);
-// })
-
-function deleteContainer(e) {
-  e.target.parentElement.remove()
-}
+bookContainer.addEventListener('click', (e) => {
+  if (e.target && e.target.id === 'deleteBtn') {
+    e.target.parentElement.remove();
+  }
+});

@@ -200,7 +200,7 @@ form button {
 @media only screen and (max-width: 768px) {
   .book-container {
     width: 90%;
-    margin: 20px auto;
+    margin: 20px 5px;
   }
 
   .book-box {
@@ -232,7 +232,7 @@ form button {
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .book-container {
     width: 45%;
-    margin: 20px auto;
+    margin: 20px 1px;
   }
 
   .book-box {
@@ -259,7 +259,7 @@ form button {
 @media only screen and (min-width: 1024px) and (max-width: 1440px) {
   .book-container {
     width: 30%;
-    margin: 20px auto;
+    margin: 20px 5px;
   }
 
   .book-box {
@@ -267,6 +267,11 @@ form button {
     left: 25%;
     top: 10%;
     padding: 20px;
+  }
+
+  input,
+  textarea {
+    width: 95%;
   }
 
   nav>.navbar-container>.navbar-theme {

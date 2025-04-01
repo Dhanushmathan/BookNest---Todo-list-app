@@ -184,3 +184,92 @@ form button {
   opacity: 0.5;
   display: none;
 }
+
+
+/* Media Query */
+
+/* Mobile */
+
+@media only screen and (max-width: 768px) {
+  .book-container {
+    width: 90%;
+    margin: 20px auto;
+  }
+
+  .book-box {
+    width: 87%;
+    left: 2.5%;
+    top: 10%;
+    padding: 15px;
+  }
+
+  input,
+  textarea {
+    width: 93%;
+  }
+
+  nav>.navbar-container>.navbar-theme {
+    width: 50px;
+    height: 25px;
+  }
+
+  nav>.navbar-container>.navbar-theme>svg {
+    width: 20px;
+    height: 20px;
+  }
+
+}
+
+/* Tablet */
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .book-container {
+    width: 45%;
+    margin: 20px auto;
+  }
+
+  .book-box {
+    width: 70%;
+    left: 15%;
+    top: 10%;
+    padding: 20px;
+  }
+
+  nav>.navbar-container>.navbar-theme {
+    width: 50px;
+    height: 25px;
+  }
+
+  nav>.navbar-container>.navbar-theme>svg {
+    width: 20px;
+    height: 20px;
+  }
+
+}
+
+/* Laptop */
+
+@media only screen and (min-width: 1024px) and (max-width: 1440px) {
+  .book-container {
+    width: 30%;
+    margin: 20px auto;
+  }
+
+  .book-box {
+    width: 50%;
+    left: 25%;
+    top: 10%;
+    padding: 20px;
+  }
+
+  nav>.navbar-container>.navbar-theme {
+    width: 50px;
+    height: 25px;
+  }
+
+  nav>.navbar-container>.navbar-theme>svg {
+    width: 20px;
+    height: 20px;
+  }
+
+}

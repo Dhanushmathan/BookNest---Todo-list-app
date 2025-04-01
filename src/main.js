@@ -12,9 +12,14 @@ const bookDescription = document.getElementById("bookDescription");
 
 const deleteBtn = document.getElementById("deleteBtn");
 
+const formData = document.querySelector("form");
+
 colorToggleEL.addEventListener('click', () => {
   const randomColor = '#' + Math.floor(Math.random() * 16777215).toString(16);
   document.body.style.backgroundColor = randomColor;
+
+  colorToggleEL.classList.toggle("move-right");
+
 });
 
 addBookBtn.addEventListener('click', () => {
@@ -42,6 +47,8 @@ addBtn.addEventListener('click', (e) => {
   bookContainer.append(divEl);
   addOverlayEL.style.display = "none";
   addBookBox.style.display = "none";
+
+  formData.reset();
 })
 
 bookContainer.addEventListener('click', (e) => {

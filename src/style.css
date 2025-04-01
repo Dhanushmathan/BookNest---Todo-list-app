@@ -62,7 +62,7 @@ nav>.navbar-container>.navbar-title {
 header>.header-title {
   text-align: center;
   margin-top: 20px;
-  color: var(--darkBlue);
+  color: #fff;
 }
 
 section {
@@ -185,6 +185,13 @@ form button {
   display: none;
 }
 
+#colorToggle {
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.move-right {
+  transform: translateX(30px) rotate(360deg);
+}
 
 /* Media Query */
 
